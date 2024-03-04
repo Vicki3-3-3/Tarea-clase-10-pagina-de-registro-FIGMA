@@ -11,6 +11,7 @@
     --primary-background-color: #F5F2EB;
     --secondary-background-color: #AED6B3;
     --primary-font: "Inter", sans-serif;
+    --primary-border-color: #5D5D5D;
 }
 
 html {
@@ -28,6 +29,7 @@ body {
 a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
 button {
@@ -35,6 +37,7 @@ button {
     background-color: transparent;
     font-family: var(--primary-font);
 }
+
 
 /*header section*/
 
@@ -45,7 +48,7 @@ header {
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     font-weight: 600;
 }
 
@@ -60,7 +63,16 @@ header {
     background-color: var(--secondary-background-color);
     padding: 10px 20px;
     border-radius: 10px;
-    font-weight: 600; 
+    font-weight: 600;
+}
+
+
+.sign-up:hover {
+    opacity: 0.7;
+}
+
+.request-demo:hover {
+    opacity: 0.7;
 }
 
 /*main section*/
@@ -71,15 +83,14 @@ main {
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
-
 }
 
 /*form section*/
 
 form {
     background-color: white;
-    width: 380px;
-    height: 500px;
+    width: 450px;
+    height: 550px;
     font-size: 0.8rem;
     padding: 20px 20px;
     border-radius: 30px;
@@ -89,29 +100,72 @@ form {
     align-items: center;
     gap: 20px;
     padding: 40px;
-    position: relative;
+    position: absolute;
     top: 80px;
     left: 100px;
 }
 
-.login-input {
-    height: 48px;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/*input for login section*/
+
+.section-login-input {
     padding: 10px;
-    margin: 10px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
 }
 
+.login-input {
+    padding: 10px;
+    border: 1px solid var(--primary-border-color);
+    border-radius: 10px;
+    width: 100%;
+}
 
 div button {
     border: 1px solid black;
     border-radius: 15px;
     padding: 10px;
-    
+
 }
+
+.btn-sign-in {
+    background-color: var(--secondary-background-color);
+    width: 376px;
+    height: 48px;
+    padding: 16px, 30px, 16px, 30px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.register-span-a {
+    font-size: 0.6rem;
+}
+
+/*image section*/
 
 .floating-person {
     height: 500px;
-    position: relative;
+    display: flex;
+    position: absolute;
     top: 100px;
     left: 600px;
+}
+
+/*media queries section*/
+
+@media screen and (max-width: 1024px) {
+
+    .floating-person {
+        display: none;
+    }
+
 }
