@@ -1,0 +1,117 @@
+@import url(./fonts.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-background-color: #F5F2EB;
+    --secondary-background-color: #AED6B3;
+    --primary-font: "Inter", sans-serif;
+}
+
+html {
+    width: 1300px;
+    height: 540px;
+    font-size: 20px;
+    font-family: var(--primary-font);
+
+}
+
+body {
+    background-color: var(--primary-background-color);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: 0px;
+    background-color: transparent;
+    font-family: var(--primary-font);
+}
+
+/*header section*/
+
+header {
+    height: 80px;
+    padding: 20px 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.sign-up {
+    margin: 10px;
+    padding: 12px 18px;
+    font-size: 0.8rem;
+}
+
+.request-demo {
+    font-size: 0.8rem;
+    background-color: var(--secondary-background-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600; 
+}
+
+/*main section*/
+
+main {
+    display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+/*form section*/
+
+form {
+    background-color: white;
+    width: 380px;
+    height: 500px;
+    font-size: 0.8rem;
+    padding: 20px 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    position: relative;
+    top: 80px;
+    left: 100px;
+}
+
+.login-input {
+    height: 48px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+div button {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+
+.floating-person {
+    height: 500px;
+    position: relative;
+    top: 100px;
+    left: 600px;
+}
